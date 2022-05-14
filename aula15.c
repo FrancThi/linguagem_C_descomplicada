@@ -31,6 +31,8 @@ int main(int argc, char const *argv[])
         printf("O número é menor do que 0.\n\n");
     }
 
+    // Atentar que cada "if" pode ter um único "else"
+
     system('pause');
     return 0;
 }
