@@ -58,8 +58,28 @@ int main(int argc, char const *argv[])
 
     /* PRIORIDADES */
 
+    f2 = 5.25;
     f1 = f2 + 10 / 2.0;
+    printf("f1 = %f\n", f1); /* repare que ele faz primeiro a divisão e depois a soma */
+    f1 = (f2 + 10) / 2.0;
+    printf("f1 = %f\n\n", f1); /* repare que ele faz primeiro o que está dentro dos parênteses */
 
+    /* RESTO DA DIVISÃO */
+
+    /* Observação ele calcula o resto apenas de números integers por integers */
+
+    x2 = 9;
+    x1 = x2 % 2;
+    printf("x1 = %d\n", x1);
+    x1 = x2 % 5;
+    printf("x1 = %d\n\n", x1);
+    /* além da aula */
+    /* me pareceu "divertido" fazer o seguinte simples programa para informar o valor de uma divisão: */
+    int divisor = 2;
+    printf("O número %d dividido por %d é igual a %d e sobra %d.\n\n", x2, divisor, x2/divisor, x2 % divisor );
+    divisor = 5;
+    printf("O número %d dividido por %d é igual a %d e sobra %d.\n\n", x2, divisor, x2/divisor, x2 % divisor );
+    
     system('pause');
     return 0;
 }
