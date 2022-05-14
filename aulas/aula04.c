@@ -25,9 +25,10 @@ int main(int argc, char const *argv[])
     printf("Obrigado por colaborar com o teste.\nO double %lf foi arquivado com sucesso na variável.\n\n", d);
  
     printf("Digite dois números inteiros: ");
-    scanf("%d%d", i, j); /* Reparar a possibilidade de receber e armazenar mais de uma informação de uma única vez */
+    scanf("%d%d", &i, &j); /* Reparar a possibilidade de receber e armazenar mais de uma informação de uma única vez */
     printf("Obrigado por colaborar com o teste.\nOs integers %d e %d foram arquivados com sucesso nas variáveis.\n\n", i, j);
     /* Ao testar e após digitar o primeiro número e pressioar enter o programa está retornando a mensagem de erro: Segmentation fault (core dumped) --- Lembrar de voltar, conforme avanço no curso, para verificar e corrigir */
+    // Voltei para informar que o erro q estava dando era por conta de não colocar o ponteiro & nas variáveis i e j. Dessa forma o scanf recebia um dado e não sabia onde coloca-lo gerando a mensagem "Segmentation fault  (core dumped)" agora corrigido, mas decidi deixar a msg acima e a correção como lembretes
 
 
     system('pause');
