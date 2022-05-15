@@ -18,6 +18,12 @@ int main(int argc, char const *argv[])
         printf("%d\n", a);
     }
     
+    while (a <= b) {
+        a = a + 1;
+        break; // quando colocado break sem condicional, o comando de repetição não faz sentido. pois sempre encerra o repetição ou condicional, neste exemplo, sem nem finalizar e imprimir em tela
+        printf("%d\n", a);
+    }
+
 
     system('pause');
     return 0;
