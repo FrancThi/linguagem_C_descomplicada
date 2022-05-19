@@ -20,5 +20,6 @@ int main(int argc, char const *argv[])
     printf("nome: %s\n", nome1);
     
     system('pause');
+    
     return 0;
 }
