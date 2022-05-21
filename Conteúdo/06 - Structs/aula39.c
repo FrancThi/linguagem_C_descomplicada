@@ -14,7 +14,7 @@ int main(int argc, char const *argv[]){
     union tipo u;
     u.x = 5;
     u.c = 'a';
-    printf("u.x = %d\nu.c = %c\n\n", u.x, u.c)// 
+    printf("u.x = %d\nu.c = %c\n\n", u.x, u.c); 
     
     system('pause');
     return 0;
