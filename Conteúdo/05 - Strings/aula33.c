@@ -26,7 +26,7 @@ int main(int argc, char const *argv[])
     int tam = strlen(str);
     for (i=0; i<tam/2;  i++){
         c = str[i];
-        str[i] = str[tam-1-i]; //jogada genial aqui foi utilizar o "-i", afinal esse for está crescendo, então como faço pra que eu ao mesmo tempo consiga decrescer? simples, apenas pego o tamanho e diminuo "i", como ele começa na posição 0, começa pegando o último elemento. Maestral!!!!
+        str[i] = str[tam-1-i]; //jogada genial aqui foi utilizar o "-i" com o tamanho do array, afinal esse comando "for" está crescendo (i++), então como faço pra que eu ao mesmo tempo consiga decrescer? Simples, apenas pego o tamanho e diminuo "i", como ele começa na posição 0, começa pegando o último elemento. Maestral!!!!
         str[tam-1-i] = c;
     }
     printf("%s\n\n", str);
